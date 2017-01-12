@@ -1,7 +1,7 @@
 /*
  * util_cevent.h
  *
- *  Created on: 2016Äê9ÔÂ24ÈÕ
+ *  Created on: 2016.9.24
  *      Author: cool
  */
 
@@ -12,7 +12,7 @@
 }
 # endif
 
-#define UTILS_ALIGN_NUM(n)  do{\
+#define UTILS_ALIGN_NUM_32(n)  do{\
 		n -= 1;\
 		n = n | (n >> 16);\
 		n = n | (n >> 8);\

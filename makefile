@@ -10,7 +10,7 @@ SRC_PATH = .
 SRCS = $(wildcard $(SRC_PATH)/*.c)
 SRC_TMP = $(notdir $(SRCS))
 OBJS = $(SRC_TMP:%.c = %.o)
-ARGV = -g
+ARGV = #-g
 LIBSO =   
 all:$(OBJS)
 	#$(CC) $(ARGV) $(OBJS) $(LIBSO) -o $(TARGET)

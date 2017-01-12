@@ -1,12 +1,11 @@
 #include <stdlib.h>
 #include <assert.h>
-
-int util_mem_realloc(void* src, unsigned int size)
+int util_mem_realloc(void* src, size_t size)
 {
 	void *tmp = 0;
 	assert(src);
 	
-	//free be better
+	//free() is better
 	if (size == 0){
 		return -1;		
 	}
